@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b257yi2n3issv"]
+
+[ext_resource type="Texture2D" uid="uid://hg4bpuuo0c5w" path="res://assets/sprites/Enemy.png" id="1_2c58s"]
+[ext_resource type="Texture2D" uid="uid://0wf6i3lw8rft" path="res://assets/sprites/healthbar-progress.png" id="1_eprib"]
+[ext_resource type="Texture2D" uid="uid://btbmc22kor1s4" path="res://assets/sprites/healthbar-over.png" id="2_b61rs"]
+
+[node name="Character" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_2c58s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+offset_left = -48.0
+offset_top = -72.0
+offset_right = 52.0
+offset_bottom = -57.0
+value = 50.0
+texture_under = ExtResource("1_eprib")
+texture_over = ExtResource("2_b61rs")
+texture_progress = ExtResource("1_eprib")
+tint_under = Color(0.568627, 0.568627, 0.568627, 1)
+tint_progress = Color(0.737255, 0, 0, 1)

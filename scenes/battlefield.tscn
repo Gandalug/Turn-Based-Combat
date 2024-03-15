@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bies66j7v121e"]
+
+[ext_resource type="Texture2D" uid="uid://cxx4fhxu3oven" path="res://assets/sprites/background.jpg" id="1_w20er"]
+
+[node name="Battlefield" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 640.0
+texture = ExtResource("1_w20er")
+expand_mode = 1
